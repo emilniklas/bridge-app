@@ -8,10 +8,15 @@
             width:100%;
             margin:0;
             padding:0;
-            background-color: #7596ff;
-            transition: 0.2s background-color;
+            background-color: #f4f4f4;
             font-family: 'aktiv-grotesk-std', Helvetica, sans-serif;
             font-size: 1.2em;
+        }
+        img {
+            max-width: 10em;
+            box-sizing: border-box;
+            padding:0 1em;
+            width:100%;
         }
         .wrap-all {
             display: table;
@@ -24,19 +29,12 @@
             vertical-align: middle;
             text-align: center;
         }
-        h1 {
-            color: white;
-            font-weight: 100;
-            margin: 0 0 0.2em;
-        }
         iframe {
-            display: block;
+            display: inline-block;
             margin: auto;
-            width: 15.5em;
-            padding-top: 0.5em;
-        }
-        iframe:first-of-type {
-            border-top:0.1em solid white;
+            width: 3.25em;
+            padding-top: 0.2em;
+            vertical-align: bottom;
         }
     </style>
 </head>
@@ -45,11 +43,11 @@
 <div class="wrap-all">
     <div class="wrap-row">
         <div class="wrap-cell">
-            // Here is where we inject the greeting
-            <p>$greeting</p>
-            <h1>Are we in business?</h1>
-            <iframe src="https://ghbtns.com/github-btn.html?user=dart-bridge&repo=framework&type=watch&count=true&v=2" frameborder="0" scrolling="0" height="20px"></iframe>
+            <div>
+                <img src="http://dart-bridge.github.io/images/logo-blue.svg" alt="Bridge">
+            </div>
             <iframe src="https://ghbtns.com/github-btn.html?user=dart-bridge&repo=framework&type=star&count=true" frameborder="0" scrolling="0" height="20px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=dart-bridge&repo=framework&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
         </div>
     </div>
 </div>
